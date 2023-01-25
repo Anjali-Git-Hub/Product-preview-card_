@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.card{
+    max-width: 640px;
+    width: 90%; 
+    margin:9em auto;
+}
+.outer{
+    height: 455px;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 20px 0px #aaa;
+}
+
+.sec-1{
+    height: 100%;
+    width: 50%;
+    float: left; 
+}
+.sec-2{    
+    width: 50%;
+    float: right;
+    height: 100%;
+    padding: 2.5em;
+    border-radius: 0 1.2rem 1.2rem 0;
+}
+
+.outer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.sec-1 img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.2rem 0 0 1.2rem;
+    object-fit: cover;
+}
+.perfume{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.6rem;
+}
+.heading{
+    font-family: 'Fraunces', serif; 
+    font-size: 4rem;
+    padding: 3rem 0;
+    line-height: 3.5rem;
+
+}
+.about{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.price-tag{
+
+    position: relative;
+}
+.price-tag1{
+    display: inline-block;
+    font-size: 3.5rem;
+    padding: 3rem 0;
+    font-family: 'Fraunces', serif; 
+}
+.price-tag2{
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    margin-left: 3rem;
+    top: 4.2rem;       
+}
+.btn{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid hsl(158, 36%, 37%);
+    width: 95%;
+    padding: 1em;
+    border-radius: 1rem;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background-color: hsl(156, 57%, 9%);
+    cursor: pointer;
+}
+/* ################ utility classes ############### */
+.bk-wh{
+    background-color: hsl(0, 0%, 100%);
+}
+.txt-wh{
+    color:hsl(0, 0%, 100%) ;
+}
+.txt-gr{
+    color:  hsl(158, 36%, 37%);
+}
+.bk-gr{
+    background-color: hsl(158, 36%, 37%);
+}
+.text{
+    color:hsl(228, 12%, 48%);
+}
+.hd-text{
+    color: hsl(212, 21%, 14%);
+}
+
+/* ################### Media Queries ######################## */
+
+@media (min-width:320px) and (max-width:480px){
+    html{
+        font-size: 54%;
+    }
+    .box{
+        float: none;
+        width: 100%;
+    }
+    .outer{
+        height: auto;
+        width: 100%;
+    }
+    .sec-1 img{
+        max-height:360px;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+    .sec-2{
+        border-radius:0 0 1.5rem 1.5rem;
+    }
+}
+@media (min-width:481px) and (max-width:544px) {
+    html{
+        font-size: 53%;
+    }
+}
+@media (min-width:545px) and (max-width:600px){
+    html{
+        font-size: 56.5%;
+    }
+}
+@media (min-width:601px) and (max-width:698px){
+    html{
+        font-size: 58.5%;
+    }
+}
